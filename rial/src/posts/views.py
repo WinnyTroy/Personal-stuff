@@ -37,7 +37,8 @@ def post_list(request):
 
 	paginator = Paginator(queryset_list, 4) # Show 4 thumbnails per page
 
-	page = request.GET.get('page')
+	page_request_var = "page"
+	page = request.GET.get(page_request_var)
 	try:
 		queryset = paginator.page(page)
 	except PageNotAnInteger:
@@ -48,7 +49,8 @@ def post_list(request):
 		queryset = paginator.page(paginator.num_pages)
 	context = {
 	"object_list" : queryset,
-	"title" : "List"
+	"title" : "List",
+	"page_request_var" : page_request_var
 	}
 
 	return render(request, "post_list.html", context)
