@@ -8,76 +8,76 @@ from posts.models import Post
 
 # Create your views here.
 
+
 def post_create(request):
-	form = PostForm(request.POST or None, request.FILES or None)
-	if form.is_valid():
-		instance = form.save(commit=False)
-		instance.save()
-		return HttpResponseRedirect('/posts/')
-	context = {
-		"form" : form
-	}
-	return render(request, "post_form.html", context)
+    form = PostForm(request.POST or None, request.FILES or None)
+    if form.is_valid():
+        instance = form.save(commit=False)
+        instance.save()
+        return HttpResponseRedirect('/posts/')
+    context = {
+        "form": form
+    }
+    return render(request, "post_form.html", context)
 
 
-def post_detail(request, id): # retrieve
+def post_detail(request, slug):  # retrieve
 
-	instance = get_object_or_404(Post, id=id)
-	context = {
-	"title" : instance.title,
-	"instance" : instance
-	}
-	
-	return render(request, "post_detail.html", context)
+    instance = get_object_or_404(Post, slug=slug)
+    context = {
+        "title": instance.title,
+        "instance": instance
+    }
+
+    return render(request, "post_detail.html", context)
 
 
 def post_list(request):
 
-	queryset_list = Post.objects.all().order_by("-timestamp")
+    queryset_list = Post.objects.all().order_by("-timestamp")
 
-	paginator = Paginator(queryset_list, 4) # Show 4 thumbnails per page
+    paginator = Paginator(queryset_list, 2)  # Show 4 thumbnails per page
 
-	page_request_var = "page"
-	page = request.GET.get(page_request_var)
-	try:
-		queryset = paginator.page(page)
-	except PageNotAnInteger:
-		# If page is not an integer, deliver first page.
-		queryset = paginator.page(1)
-	except EmptyPage:
-		# If page is out of range (e.g. 9999), deliver last page of results.
-		queryset = paginator.page(paginator.num_pages)
-	context = {
-	"object_list" : queryset,
-	"title" : "List",
-	"page_request_var" : page_request_var
-	}
+    page_request_var = "page"
+    page = request.GET.get(page_request_var)
+    try:
+        queryset = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        queryset = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        queryset = paginator.page(paginator.num_pages)
+    context = {
+        "object_list": queryset,
+        "title": "List",
+        "page_request_var": page_request_var
+    }
 
-	return render(request, "post_list.html", context)
-
+    return render(request, "post_list.html", context)
 
 
 def post_update(request, id=None):
-	instance = get_object_or_404(Post, id=id)
+    instance = get_object_or_404(Post, id=id)
 
-	form = PostForm(request.POST or None,  request.FILES or None ,instance=instance)
-	if form.is_valid():
-		instance = form.save(commit=False)
-		instance.save()
-		return HttpResponseRedirect('/posts/')
+    form = PostForm(request.POST or None,
+                    request.FILES or None, instance=instance)
+    if form.is_valid():
+        instance = form.save(commit=False)
+        instance.save()
+        return HttpResponseRedirect('/posts/')
 
-	context = {
-	"title" : instance.title,
-	"instance" : instance,
-	"form" : form
-	}
+    context = {
+        "title": instance.title,
+        "instance": instance,
+        "form": form
+    }
 
-	return render(request, "post_form.html", context)
+    return render(request, "post_form.html", context)
 
 
 def post_delete(request, id=None):
-	instance = get_object_or_404(Post, id=id)
-	instance.delete()
+    instance = get_object_or_404(Post, id=id)
+    instance.delete()
 
-	return HttpResponseRedirect('/posts/')
-	
+    return HttpResponseRedirect('/posts/')
