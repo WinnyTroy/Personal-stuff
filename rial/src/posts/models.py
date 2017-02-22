@@ -8,12 +8,11 @@ from django.core.urlresolvers import reverse
 
 
 class Post(models.Model):
-	title = models.CharField(max_length=120)
-	content = models.TextField()
-	updated = models.DateTimeField(auto_now=True, auto_now_add=False)
-	timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)
+    title = models.CharField(max_length=120)
+    image = models.FileField(upload_to="photos/%Y/%m/%d",null=True, blank=True)
+    content = models.TextField()
+    updated = models.DateTimeField(auto_now=True, auto_now_add=False)
+    timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)
 
-
-	def __unicode__(self):
-		return self.title
-		
+    def __unicode__(self):
+        return self.title
