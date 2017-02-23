@@ -1,7 +1,7 @@
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponseRedirect, Http404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-
-from django.shortcuts import render, get_object_or_404, redirect
+from urllib import quote_plus
+from django.shortcuts import render, get_object_or_404
 
 from forms import PostForm
 from posts.models import Post
@@ -10,6 +10,8 @@ from posts.models import Post
 
 
 def post_create(request):
+    if not request.user.is_staff or not request.user.is_superuser:
+        raise Http404
     form = PostForm(request.POST or None, request.FILES or None)
     if form.is_valid():
         instance = form.save(commit=False)
@@ -24,9 +26,11 @@ def post_create(request):
 def post_detail(request, slug):  # retrieve
 
     instance = get_object_or_404(Post, slug=slug)
+    share_string = quote_plus(instance.content)
     context = {
         "title": instance.title,
-        "instance": instance
+        "instance": instance,
+        "share_string": share_string
     }
 
     return render(request, "post_detail.html", context)
@@ -58,6 +62,8 @@ def post_list(request):
 
 
 def post_update(request, id=None):
+    if not request.user.is_staff or not request.user.is_superuser:
+        raise Http404
     instance = get_object_or_404(Post, id=id)
 
     form = PostForm(request.POST or None,
@@ -77,6 +83,8 @@ def post_update(request, id=None):
 
 
 def post_delete(request, id=None):
+    if not request.user.is_staff or not request.user.is_superuser:
+        raise Http404
     instance = get_object_or_404(Post, id=id)
     instance.delete()
 
