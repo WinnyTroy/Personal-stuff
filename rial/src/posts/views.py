@@ -40,7 +40,7 @@ def post_list(request):
 
     queryset_list = Post.objects.all().order_by("-timestamp")
 
-    paginator = Paginator(queryset_list, 2)  # Show 4 thumbnails per page
+    paginator = Paginator(queryset_list, 4)  # Show 4 thumbnails per page
 
     page_request_var = "page"
     page = request.GET.get(page_request_var)

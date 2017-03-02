@@ -5,16 +5,11 @@
 
 
 
-<div class="col-sm-8 col-sm-offset-1">
-<h1> {{ title }}</h1>
-
-
-<div class="row post_list">
+<div class="">
 {% for obj in object_list %}
 
 
-  <div class="col-sm-6">
-    <div class="thumbnail">
+    <div class="thumbnail col-sm-6 post_list">
 
     {% if obj.image %}
      <img src="{{ obj.image.url }}" class="img-responsive">
@@ -22,7 +17,7 @@
      {% endif %}
 
       <div class="caption">
-        <h3><a href="{% url 'posts:index' %}"> {{obj.title}} </a> <br/> 
+        <h3><a href="{% url 'posts:detail' slug=obj.slug %}"> {{obj.title}} </a> <br/> 
         <small> {{obj.timestamp}} </small></h3>
         {% if obj.user.get_full_name %}
         <p>Author : {{ obj.user.get_full_name }}</p>
@@ -32,15 +27,14 @@
         <!-- truncatechars is a built in function that aids in limiting the number of characters that can be viewed. Helps keep content in a similarly structured manner -->
 
 
-        <p>{{obj.content | truncatechars:15 }}</p>
+        <p>{{obj.content | truncatechars:100 }}</p>
         <p><a href="{% url 'posts:detail' slug=obj.slug %}" class="btn btn-primary" role="button">View</a></p>
       </div>
     </div>
-  </div>
 
-{% cycle "" "</div><div class='row'>" %} 
+<!-- {% cycle "" "</div><div class='row'>" %}  -->
 {% endfor %}
-</div>
+<!-- </div> -->
 
 
 <div class="pagination">

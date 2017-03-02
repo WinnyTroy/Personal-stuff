@@ -1,4 +1,3 @@
-
 {% load  staticfiles %}
 
 <!DOCTYPE html>
@@ -14,7 +13,6 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
 	<link href="{% static 'css/styles.css' %}" rel="stylesheet">
 
 </head>
@@ -22,7 +20,7 @@
 <div id='cssmenu'>
         <ul style="display: block;/* width: 50%; */float: right;">
             <li>
-                <a href='#'>Home</a>
+                <a href='{% url "posts:index" %}'>Home</a>
             </li>
             
             <li>
@@ -62,7 +60,30 @@
     </div>
 
 
-<div class="container col-sm-9 blog-main">
+
+<div class="col-sm-3 blog-sidebar">
+    <div class="logo">
+        <section id="intro">
+                    <a href="http://troy.bitballoon.com/"></a>
+                    <img src="{% static 'images/me.jpg' %}" alt="" />
+        </section>
+    </div>
+
+<div class="sidebar-module">
+    <section class="blurb">
+        <ol class="list-unstyled">
+        <p>Hey, So I hope ...</p>
+        <ul class="actions list-unstyled">
+            <li><a href="#" class="button">Portforlio</a></li>
+        </ul>
+        </ol>
+
+        </section>
+</div>
+</div>
+
+
+<div class="container col-lg-9 blog-main">
 {% block content %}
 
 
@@ -70,36 +91,7 @@
 
 	
 {% endblock content %}
-</div>
-
-
-
-
-<div class="col-sm-3 blog-sidebar">
-	<div class="logo">
-		<section id="intro">
-					<a href="http://troy.bitballoon.com/"></a>
-					<img src="{% static 'images/me.jpg' %}" alt="" />
-		</section>
-	</div>
-
-<div class="sidebar-module">
-	<section class="blurb">
-		<h2>About</h2>
-		<ol class="list-unstyled">
-		<p>We genuinely hope that you are satisfied with the quality of our services and customer. Kindly  reach out to us through +254 718 876 044 for any further clarification and assistance.</p>
-		<ul class="actions">
-			<li><a href="#" class="button">Sign Up to the Platform</a></li>
-		</ul>
-		</ol>
-
-		</section>
-</div>
-</div>
-
-
-
- 
+</div> 
 
  <!-- Latest compiled and minified JavaScript -->
 
