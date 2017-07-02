@@ -2442,11 +2442,12 @@
 /* Work Item */
 
 	.work-item {
-		margin: 0 0 2em 0;
+		margin: 0em 0 1em 0;
+		min-width: 100%;
 	}
 
 		.work-item .image {
-			margin: 0 0 1.5em 0;
+			margin: 1.5em 0 1em 0;
 		}
 
 		.work-item h3 {
