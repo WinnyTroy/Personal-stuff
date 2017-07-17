@@ -43,6 +43,7 @@
 	.image {
 		position: relative;
 		-ms-behavior: url("assets/js/ie/PIE.htc");
+		width: 100%; 
 	}
 
 		.image:before, .image:after {
@@ -57,7 +58,7 @@
 /* Header */
 
 	#header {
-		background-image: url("../../images/bg.jpg");
+		width: 100%;
 		background-repeat: no-repeat;
 		background-size: cover;
 		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
