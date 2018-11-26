@@ -1,687 +1,0 @@
-<!DOCTYPE html><html lang="en-US" class="no-js" ><!-- start --><head>	<meta charset="UTF-8" />	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />    <meta name="format-detection" content="telephone=no">	<!-- set faviocn-->			<!-- set title of the page -->	<title>	Zarja Premium Wordpress Blog | Page 2	</title>	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	<link rel="icon" type="image/png" href="../../../wp-content/uploads/2015/03/zarja-favicon.png">	<link rel="alternate" type="application/atom+xml" title="Zarja Premium Wordpress Blog Atom Feed" href="http://zarja.premiumcoding.com/boxed/feed/atom/" />			<link rel="alternate" type="application/rss+xml" title="Zarja Premium Wordpress Blog &raquo; Feed" href="http://zarja.premiumcoding.com/boxed/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Zarja Premium Wordpress Blog &raquo; Comments Feed" href="http://zarja.premiumcoding.com/boxed/comments/feed/" />
-<link rel='stylesheet' id='contact-form-7-css'  href='http://zarja.premiumcoding.com/boxed/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.1' type='text/css' media='all' />
-<link rel='stylesheet' id='rs-plugin-settings-css'  href='http://zarja.premiumcoding.com/boxed/wp-content/plugins/revslider/rs-plugin/css/settings.css?ver=4.6.5' type='text/css' media='all' />
-<style id='rs-plugin-settings-inline-css' type='text/css'>
-.background-box{float:left;width:460px;height:240px;background:rgba(255,255,255,0.92)}.slider-button a{float:left;padding:5px 25px;color:#fff !important}.slider-button a:hover{text-decoration:underline}
-</style>
-<link rel='stylesheet' id='tp-quicksand-css'  href='http://fonts.googleapis.com/css?family=Quicksand%3A400%2C700&#038;ver=4.1.14' type='text/css' media='all' />
-<link rel='stylesheet' id='tp-muli-css'  href='http://fonts.googleapis.com/css?family=Muli%3A400%2C400italic&#038;ver=4.1.14' type='text/css' media='all' />
-<link rel='stylesheet' id='tp-rochester-css'  href='http://fonts.googleapis.com/css?family=Rochester&#038;ver=4.1.14' type='text/css' media='all' />
-<link rel='stylesheet' id='main-css'  href='http://zarja.premiumcoding.com/boxed/wp-content/themes/zarja/style.css?ver=4.1.14' type='text/css' media='all' />
-<link rel='stylesheet' id='prettyp-css'  href='http://zarja.premiumcoding.com/boxed/wp-content/themes/zarja/css/prettyPhoto.css?ver=4.1.14' type='text/css' media='all' />
-<link rel='stylesheet' id='googleFontbody-css'  href='http://fonts.googleapis.com/css?family=Muli:400,400italic' type='text/css' media='all' />
-<link rel='stylesheet' id='googleFontHeading-css'  href='http://fonts.googleapis.com/css?family=Quicksand:400,700' type='text/css' media='all' />
-<link rel='stylesheet' id='googleFontMenu-css'  href='http://fonts.googleapis.com/css?family=Muli:300,400' type='text/css' media='all' />
-<link rel='stylesheet' id='googleFontQuote-css'  href='http://fonts.googleapis.com/css?family=Rochester' type='text/css' media='all' />
-<link rel='stylesheet' id='font-awesome_pms-css'  href='http://zarja.premiumcoding.com/boxed/wp-content/themes/zarja/css/font-awesome.css' type='text/css' media='all' />
-<link rel='stylesheet' id='options-css'  href='http://zarja.premiumcoding.com/boxed/wp-content/themes/zarja/css/options.css?ver=4.1.14' type='text/css' media='all' />
-<script type='text/javascript' src='http://zarja.premiumcoding.com/boxed/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
-<script type='text/javascript' src='http://zarja.premiumcoding.com/boxed/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
-<script type='text/javascript' src='http://zarja.premiumcoding.com/boxed/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.tools.min.js?ver=4.6.5'></script>
-<script type='text/javascript' src='http://zarja.premiumcoding.com/boxed/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?ver=4.6.5'></script>
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 4.1.14" />
-		<script type="text/javascript">
-			jQuery(document).ready(function() {
-				// CUSTOM AJAX CONTENT LOADING FUNCTION
-				var ajaxRevslider = function(obj) {
-				
-					// obj.type : Post Type
-					// obj.id : ID of Content to Load
-					// obj.aspectratio : The Aspect Ratio of the Container / Media
-					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
-					
-					var content = "";
-
-					data = {};
-					
-					data.action = 'revslider_ajax_call_front';
-					data.client_action = 'get_slider_html';
-					data.token = '417c377a04';
-					data.type = obj.type;
-					data.id = obj.id;
-					data.aspectratio = obj.aspectratio;
-					
-					// SYNC AJAX REQUEST
-					jQuery.ajax({
-						type:"post",
-						url:"http://zarja.premiumcoding.com/boxed/wp-admin/admin-ajax.php",
-						dataType: 'json',
-						data:data,
-						async:false,
-						success: function(ret, textStatus, XMLHttpRequest) {
-							if(ret.success == true)
-								content = ret.data;								
-						},
-						error: function(e) {
-							console.log(e);
-						}
-					});
-					
-					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
-					 return content;						 
-				};
-				
-				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
-				var ajaxRemoveRevslider = function(obj) {
-					return jQuery(obj.selector+" .rev_slider").revkill();
-				};
-
-				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
-				var extendessential = setInterval(function() {
-					if (jQuery.fn.tpessential != undefined) {
-						clearInterval(extendessential);
-						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
-							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
-							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
-							// func: the Function Name which is Called once the Item with the Post Type has been clicked
-							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
-							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
-						}
-					}
-				},30);
-			});
-		</script>
-		</head>		<!-- start body --><body class="home blog paged paged-2" >	<!-- start header -->			<!-- fixed menu -->												<div class="pagenav fixedmenu">										<div class="holder-fixedmenu">												<div class="logo-fixedmenu">																									<a href="../../../boxed"><img src="../../../wp-content/uploads/2015/03/zarja-scroll-logo.png" alt="Zarja Premium Wordpress Blog - Zarja Premium Wordpress Blog" ></a>					</div>						<div class="menu-fixedmenu home">						<ul id="menu-main-menu" class="menu"><li id="menu-item-8410-6299" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home" );"><a  href="../../../boxed">Home</a></li>
-<li id="menu-item-4624-6497" class="menu-item menu-item-type-taxonomy menu-item-object-category" );"><a  href="../../category/drinks-coffee/index.html">Drinks &#038; Food</a></li>
-<li id="menu-item-8224-6295" class="menu-item menu-item-type-taxonomy menu-item-object-category" );"><a  href="../../category/blog/index.html">Fashion</a></li>
-<li id="menu-item-7501-6296" class="menu-item menu-item-type-taxonomy menu-item-object-category" );"><a  href="../../category/bathroom/index.html">Bathroom</a></li>
-<li id="menu-item-9953-6297" class="menu-item menu-item-type-taxonomy menu-item-object-category" );"><a  href="../../category/photography/index.html">Lifestyle</a></li>
-<li id="menu-item-6597-6300" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children" );"><a  href="index.html#">Pages</a>
-<ul class="sub-menu">
-	<li id="menu-item-891-6339" class="menu-item menu-item-type-post_type menu-item-object-page" );"><a  href="../../index.html?p=6209">Sample Page Example</a></li>
-	<li id="menu-item-4411-6338" class="menu-item menu-item-type-post_type menu-item-object-page" );"><a  href="../../index.html?p=6215">Typography</a></li>
-	<li id="menu-item-7188-6336" class="menu-item menu-item-type-post_type menu-item-object-page" );"><a  href="../../index.html?p=6238">About Us</a></li>
-</ul>
-</li>
-<li id="menu-item-3891-6508" class="menu-item menu-item-type-custom menu-item-object-custom" );"><a  href="http://themeforest.net/item/zarja-feminine-personal-wordpress-blog-theme/10259094"><span>Buy</span></a></li>
-</ul>						</div>				</div>				</div>							<header>															<div id = "upperheader">							<div id = "upperinnerheader">								<div class = "top-search-form">									<form role="search" method="get" id="searchform" class="searchform" action="../../../boxed" >
-	<input type="text" value="" name="s" id="s" />
-	<i class="fa fa-search search-desktop"></i>
-
-	</form>								</div>																<div class="social_icons">									<div><a target="_blank"  href="http://twitter.com/PremiumCoding" title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank"  href="https://www.facebook.com/PremiumCoding" title="Facebook"><i class="fa fa-facebook"></i></a><a target="_blank"  href="https://dribbble.com/gljivec" title="Dribbble"><i class="fa fa-dribbble"></i></a><a target="_blank"  href="http://www.pinterest.com/gljivec/" title="Pinterest"><i class="fa fa-pinterest"></i></a><a target="_blank"  href="http://instagram.com/dreamypixels" title="Instagram"><i class="fa fa-instagram"></i></a></div>								</div>															</div>						</div>										<div id="headerwrap">									<!-- logo and main menu -->						<div id="header">							<!-- respoonsive menu main-->							<!-- respoonsive menu no scrool bar -->							<div class="respMenu noscroll">								<div class="resp_menu_button"><i class="fa fa-list-ul fa-2x"></i></div>								<div class="menu-main-menu-container"><div class="event-type-selector-dropdown"><a  class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home" href="../../../boxed"><strong>Home</strong></a><br>
-<a  class="menu-item menu-item-type-taxonomy menu-item-object-category" href="../../category/drinks-coffee/index.html"><strong>Drinks & Food</strong></a><br>
-<a  class="menu-item menu-item-type-taxonomy menu-item-object-category" href="../../category/blog/index.html"><strong>Fashion</strong></a><br>
-<a  class="menu-item menu-item-type-taxonomy menu-item-object-category" href="../../category/bathroom/index.html"><strong>Bathroom</strong></a><br>
-<a  class="menu-item menu-item-type-taxonomy menu-item-object-category" href="../../category/photography/index.html"><strong>Lifestyle</strong></a><br>
-<a  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children" href="index.html#"><strong>Pages</strong></a><br>
-
-<a  class="menu-item menu-item-type-post_type menu-item-object-page" href="../../index.html?p=6209">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-circle"></i>Sample Page Example</a><br>
-<a  class="menu-item menu-item-type-post_type menu-item-object-page" href="../../index.html?p=6215">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-circle"></i>Typography</a><br>
-<a  class="menu-item menu-item-type-post_type menu-item-object-page" href="../../index.html?p=6238">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-circle"></i>About Us</a><br>
-
-
-<a  class="menu-item menu-item-type-custom menu-item-object-custom" href="http://themeforest.net/item/zarja-feminine-personal-wordpress-blog-theme/10259094"><strong>Buy</strong></a><br>
-</div></div>								</div>										<!-- main menu -->							<div class="pagenav"> 							<ul id="menu-main-menu-2" class="menu"><li id="menu-item-7137-6299" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home" );"><a  href="../../../boxed">Home</a></li>
-<li id="menu-item-5975-6497" class="menu-item menu-item-type-taxonomy menu-item-object-category" );"><a  href="../../category/drinks-coffee/index.html">Drinks &#038; Food</a></li>
-<li id="menu-item-9522-6295" class="menu-item menu-item-type-taxonomy menu-item-object-category" );"><a  href="../../category/blog/index.html">Fashion</a></li>
-<li id="menu-item-2711-6296" class="menu-item menu-item-type-taxonomy menu-item-object-category" );"><a  href="../../category/bathroom/index.html">Bathroom</a></li>
-<li id="menu-item-6752-6297" class="menu-item menu-item-type-taxonomy menu-item-object-category" );"><a  href="../../category/photography/index.html">Lifestyle</a></li>
-<li id="menu-item-120-6300" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children" );"><a  href="index.html#">Pages</a>
-<ul class="sub-menu">
-	<li id="menu-item-8933-6339" class="menu-item menu-item-type-post_type menu-item-object-page" );"><a  href="../../index.html?p=6209">Sample Page Example</a></li>
-	<li id="menu-item-2232-6338" class="menu-item menu-item-type-post_type menu-item-object-page" );"><a  href="../../index.html?p=6215">Typography</a></li>
-	<li id="menu-item-9827-6336" class="menu-item menu-item-type-post_type menu-item-object-page" );"><a  href="../../index.html?p=6238">About Us</a></li>
-</ul>
-</li>
-<li id="menu-item-9465-6508" class="menu-item menu-item-type-custom menu-item-object-custom" );"><a  href="http://themeforest.net/item/zarja-feminine-personal-wordpress-blog-theme/10259094"><span>Buy</span></a></li>
-</ul>															</div> 														</div>											</div>						<div id="logo">										<a href="../../../boxed"><img src="../../../wp-content/uploads/2015/03/logo-zarja-1080.png" alt="Zarja Premium Wordpress Blog - Zarja Premium Wordpress Blog" /></a>					</div>													<div id="zarjaSlider">											<style type='text/css'>
-				#rev_slider_1_1, #rev_slider_1_1_wrapper { width:1080px; height:580px;}
-			
-			   @media only screen and (min-width: 1100px)  {
-			 		  #rev_slider_1_1, #rev_slider_1_1_wrapper { width:1080px; height:580px;}
-			   }
-
-			
-			   @media only screen and (min-width: 960px) and (max-width: 1099px) {
-			 		  #rev_slider_1_1, #rev_slider_1_1_wrapper { width:960px; height:515px;}
-			   }
-
-			
-			   @media only screen and (min-width: 840px) and (max-width: 959px) {
-			 		  #rev_slider_1_1, #rev_slider_1_1_wrapper { width:840px; height:451px;}
-			   }
-
-			
-			   @media only screen and (min-width: 720px) and (max-width: 839px) {
-			 		  #rev_slider_1_1, #rev_slider_1_1_wrapper { width:720px; height:386px;}
-			   }
-
-			
-			   @media only screen and (min-width: 600px) and (max-width: 719px) {
-			 		  #rev_slider_1_1, #rev_slider_1_1_wrapper { width:600px; height:322px;}
-			   }
-
-			
-			   @media only screen and (min-width: 480px) and (max-width: 599px) {
-			 		  #rev_slider_1_1, #rev_slider_1_1_wrapper { width:480px; height:257px;}
-			   }
-
-			
-			   @media only screen and (min-width: 0px) and (max-width: 479px) {
-			 		  #rev_slider_1_1, #rev_slider_1_1_wrapper { width:260px; height:139px;}
-			   }
-
-			</style>
-<div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper" style="margin:0px auto;background-color:#E9E9E9;padding:0px;margin-top:0px;margin-bottom:0px;">
-<!-- START REVOLUTION SLIDER 4.6.5 responsitive mode -->
-	<div id="rev_slider_1_1" class="rev_slider" style="display:none;">
-<ul>	<!-- SLIDE  -->
-	<li data-transition="fade" data-slotamount="7" data-masterspeed="600" data-link="http://zarja.premiumcoding.com/boxed/the-making-of-a-great-bouquet/"  data-thumb="http://zarja.premiumcoding.com/boxed/wp-content/uploads/2012/03/zarja-fullwidth-post-5-320x200.jpg"  data-saveperformance="on"  data-title="Slide">
-		<!-- MAIN IMAGE -->
-		<img src="../../wp-content/plugins/revslider/images/dummy.png"  alt="zarja-fullwidth-post-5" data-lazyload="http://zarja.premiumcoding.com/boxed/wp-content/uploads/2012/03/zarja-fullwidth-post-5.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-		<!-- LAYERS -->
-
-		<!-- LAYER NR. 1 -->
-		<div class="tp-caption background-box tp-fade stb tp-resizeme" 
-			 data-x="center" data-hoffset="0" 
-			 data-y="center" data-voffset="0" 
-			data-speed="200" 
-			data-start="1800" 
-			data-easing="Linear.easeNone" 
-			data-splitin="none" 
-			data-splitout="none" 
-			data-elementdelay="0.1" 
-			data-endelementdelay="0.1" 
-			 data-endspeed="400" 
-
-			style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;"> 
-		</div>
-
-		<!-- LAYER NR. 2 -->
-		<div class="tp-caption zarja-title tp-fade stb tp-resizeme" 
-			 data-x="center" data-hoffset="1" 
-			 data-y="center" data-voffset="-24" 
-			data-speed="300" 
-			data-start="1800" 
-			data-easing="Linear.easeNone" 
-			data-splitin="none" 
-			data-splitout="none" 
-			data-elementdelay="0.1" 
-			data-endelementdelay="0.1" 
-			 data-endspeed="400" 
-
-			style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">The making of a great Bouquet 
-		</div>
-
-		<!-- LAYER NR. 3 -->
-		<div class="tp-caption slider-button tp-fade stb tp-resizeme" 
-			 data-x="center" data-hoffset="0" 
-			 data-y="center" data-voffset="-70" 
-			data-speed="300" 
-			data-start="1800" 
-			data-easing="Linear.easeNone" 
-			data-splitin="none" 
-			data-splitout="none" 
-			data-elementdelay="0.1" 
-			data-endelementdelay="0.1" 
-			 data-endspeed="400" 
-
-			style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">PHOTOGRAPHY 
-		</div>
-
-		<!-- LAYER NR. 4 -->
-		<div class="tp-caption zarja-body-text tp-fade stb tp-resizeme" 
-			 data-x="center" data-hoffset="0" 
-			 data-y="center" data-voffset="20" 
-			data-speed="300" 
-			data-start="2500" 
-			data-easing="Linear.easeNone" 
-			data-splitin="chars" 
-			data-splitout="none" 
-			data-elementdelay="0.07" 
-			data-endelementdelay="0.1" 
-			 data-endspeed="400" 
-
-			style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;">Lovely handmade bouquet with fabric  
-		</div>
-
-		<!-- LAYER NR. 5 -->
-		<div class="tp-caption zarja-body-text tp-fade stb tp-resizeme" 
-			 data-x="center" data-hoffset="0" 
-			 data-y="center" data-voffset="50" 
-			data-speed="300" 
-			data-start="4750" 
-			data-easing="Linear.easeNone" 
-			data-splitin="chars" 
-			data-splitout="none" 
-			data-elementdelay="0.07" 
-			data-endelementdelay="0.1" 
-			 data-endspeed="400" 
-
-			style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">flowers and brooches and ornaments.  
-		</div>
-
-		<!-- LAYER NR. 6 -->
-		<div class="tp-caption zarja-body-text tp-fade stb tp-resizeme" 
-			 data-x="center" data-hoffset="0" 
-			 data-y="center" data-voffset="80" 
-			data-speed="300" 
-			data-start="7000" 
-			data-easing="Linear.easeNone" 
-			data-splitin="chars" 
-			data-splitout="none" 
-			data-elementdelay="0.07" 
-			data-endelementdelay="0.1" 
-			 data-endspeed="400" 
-
-			style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;">Click to <span>find more</span> about bouquets. 
-		</div>
-	</li>
-	<!-- SLIDE  -->
-	<li data-transition="fade" data-slotamount="7" data-masterspeed="600" data-link="http://zarja.premiumcoding.com/boxed/love-is-like-a-tiny-rose-cherrish-it/"  data-thumb="http://zarja.premiumcoding.com/boxed/wp-content/uploads/2015/03/zarja-fullwidth-post-6-320x200.jpg"  data-saveperformance="on"  data-title="Slide">
-		<!-- MAIN IMAGE -->
-		<img src="../../wp-content/plugins/revslider/images/dummy.png"  alt="zarja-fullwidth-post-6" data-lazyload="http://zarja.premiumcoding.com/boxed/wp-content/uploads/2015/03/zarja-fullwidth-post-6.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-		<!-- LAYERS -->
-
-		<!-- LAYER NR. 1 -->
-		<div class="tp-caption background-box tp-fade stb tp-resizeme" 
-			 data-x="center" data-hoffset="0" 
-			 data-y="center" data-voffset="0" 
-			data-speed="200" 
-			data-start="1800" 
-			data-easing="Linear.easeNone" 
-			data-splitin="none" 
-			data-splitout="none" 
-			data-elementdelay="0.1" 
-			data-endelementdelay="0.1" 
-			 data-endspeed="400" 
-
-			style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;"> 
-		</div>
-
-		<!-- LAYER NR. 2 -->
-		<div class="tp-caption zarja-title tp-fade stb tp-resizeme" 
-			 data-x="center" data-hoffset="0" 
-			 data-y="center" data-voffset="-24" 
-			data-speed="300" 
-			data-start="1800" 
-			data-easing="Linear.easeNone" 
-			data-splitin="none" 
-			data-splitout="none" 
-			data-elementdelay="0.1" 
-			data-endelementdelay="0.1" 
-			 data-endspeed="400" 
-
-			style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">Prepare your table in a proper way 
-		</div>
-
-		<!-- LAYER NR. 3 -->
-		<div class="tp-caption slider-button tp-fade stb tp-resizeme" 
-			 data-x="center" data-hoffset="0" 
-			 data-y="center" data-voffset="-70" 
-			data-speed="300" 
-			data-start="1800" 
-			data-easing="Linear.easeNone" 
-			data-splitin="none" 
-			data-splitout="none" 
-			data-elementdelay="0.1" 
-			data-endelementdelay="0.1" 
-			 data-endspeed="400" 
-
-			style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">FOOD & DRINKS 
-		</div>
-
-		<!-- LAYER NR. 4 -->
-		<div class="tp-caption sfb stb" 
-			 data-x="335" 
-			 data-y="312"  
-			data-speed="1200" 
-			data-start="2800" 
-			data-easing="Back.easeOut" 
-			data-elementdelay="0.1" 
-			data-endelementdelay="0.1" 
-			 data-endspeed="400" 
-
-			style="z-index: 8;"><img src="../../wp-content/plugins/revslider/images/dummy.png" alt="" data-lazyload="http://zarja.premiumcoding.com/boxed/wp-content/uploads/2015/03/zarja-small-slider-1.jpg"> 
-		</div>
-
-		<!-- LAYER NR. 5 -->
-		<div class="tp-caption sfb stb" 
-			 data-x="479" 
-			 data-y="312"  
-			data-speed="1200" 
-			data-start="2900" 
-			data-easing="Back.easeOut" 
-			data-elementdelay="0.1" 
-			data-endelementdelay="0.1" 
-			 data-endspeed="400" 
-
-			style="z-index: 9;"><img src="../../wp-content/plugins/revslider/images/dummy.png" alt="" data-lazyload="http://zarja.premiumcoding.com/boxed/wp-content/uploads/2015/03/zarja-small-slider-2.jpg"> 
-		</div>
-
-		<!-- LAYER NR. 6 -->
-		<div class="tp-caption sfb stb" 
-			 data-x="622" 
-			 data-y="312"  
-			data-speed="1200" 
-			data-start="3000" 
-			data-easing="Back.easeOut" 
-			data-elementdelay="0.1" 
-			data-endelementdelay="0.1" 
-			 data-endspeed="400" 
-
-			style="z-index: 10;"><img src="../../wp-content/plugins/revslider/images/dummy.png" alt="" data-lazyload="http://zarja.premiumcoding.com/boxed/wp-content/uploads/2015/03/zarja-small-slider-3.jpg"> 
-		</div>
-	</li>
-	<!-- SLIDE  -->
-	<li data-transition="fade" data-slotamount="7" data-masterspeed="600" data-link="http://zarja.premiumcoding.com/the-making-of-a-great-bouquet/"  data-thumb="http://zarja.premiumcoding.com/boxed/wp-content/uploads/2015/03/zarja-fullwidth-post-8-320x200.jpg"  data-saveperformance="on"  data-title="Slide">
-		<!-- MAIN IMAGE -->
-		<img src="../../wp-content/plugins/revslider/images/dummy.png"  alt="zarja-fullwidth-post-8" data-lazyload="http://zarja.premiumcoding.com/boxed/wp-content/uploads/2015/03/zarja-fullwidth-post-8.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-		<!-- LAYERS -->
-
-		<!-- LAYER NR. 1 -->
-		<div class="tp-caption background-box tp-fade stb tp-resizeme" 
-			 data-x="center" data-hoffset="0" 
-			 data-y="center" data-voffset="0" 
-			data-speed="200" 
-			data-start="1800" 
-			data-easing="Linear.easeNone" 
-			data-splitin="none" 
-			data-splitout="none" 
-			data-elementdelay="0.1" 
-			data-endelementdelay="0.1" 
-			 data-endspeed="400" 
-
-			style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;"> 
-		</div>
-
-		<!-- LAYER NR. 2 -->
-		<div class="tp-caption zarja-title tp-fade stb tp-resizeme" 
-			 data-x="center" data-hoffset="1" 
-			 data-y="center" data-voffset="-24" 
-			data-speed="300" 
-			data-start="1800" 
-			data-easing="Linear.easeNone" 
-			data-splitin="none" 
-			data-splitout="none" 
-			data-elementdelay="0.1" 
-			data-endelementdelay="0.1" 
-			 data-endspeed="400" 
-
-			style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">The making of a great Bouquet 
-		</div>
-
-		<!-- LAYER NR. 3 -->
-		<div class="tp-caption slider-button tp-fade stb tp-resizeme" 
-			 data-x="center" data-hoffset="0" 
-			 data-y="center" data-voffset="-70" 
-			data-speed="300" 
-			data-start="1800" 
-			data-easing="Linear.easeNone" 
-			data-splitin="none" 
-			data-splitout="none" 
-			data-elementdelay="0.1" 
-			data-endelementdelay="0.1" 
-			 data-endspeed="400" 
-
-			style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">PHOTOGRAPHY 
-		</div>
-
-		<!-- LAYER NR. 4 -->
-		<div class="tp-caption zarja-body-text tp-fade stb tp-resizeme" 
-			 data-x="center" data-hoffset="0" 
-			 data-y="center" data-voffset="20" 
-			data-speed="300" 
-			data-start="2500" 
-			data-easing="Linear.easeNone" 
-			data-splitin="chars" 
-			data-splitout="none" 
-			data-elementdelay="0.07" 
-			data-endelementdelay="0.1" 
-			 data-endspeed="400" 
-
-			style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;">Lovely handmade bouquet with fabric  
-		</div>
-
-		<!-- LAYER NR. 5 -->
-		<div class="tp-caption zarja-body-text tp-fade stb tp-resizeme" 
-			 data-x="center" data-hoffset="0" 
-			 data-y="center" data-voffset="50" 
-			data-speed="300" 
-			data-start="4750" 
-			data-easing="Linear.easeNone" 
-			data-splitin="chars" 
-			data-splitout="none" 
-			data-elementdelay="0.07" 
-			data-endelementdelay="0.1" 
-			 data-endspeed="400" 
-
-			style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">flowers and brooches and ornaments.  
-		</div>
-
-		<!-- LAYER NR. 6 -->
-		<div class="tp-caption zarja-body-text tp-fade stb tp-resizeme" 
-			 data-x="center" data-hoffset="0" 
-			 data-y="center" data-voffset="80" 
-			data-speed="300" 
-			data-start="7000" 
-			data-easing="Linear.easeNone" 
-			data-splitin="chars" 
-			data-splitout="none" 
-			data-elementdelay="0.07" 
-			data-endelementdelay="0.1" 
-			 data-endspeed="400" 
-
-			style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;">Click to <span>find more</span> about bouquets. 
-		</div>
-	</li>
-</ul>
-<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
-			
-
-			<style scoped>.tp-caption.slider-button,.slider-button{font-size:14px;font-weight:400;font-family:Muli;color:rgb(255,255,255);text-decoration:none;padding:3px 15px;background-color:rgb(181,101,167);border-width:0px;border-color:rgb(34,34,34);border-style:none}.tp-caption.zarja-title,.zarja-title{font-size:24px;line-height:29px;font-weight:700;font-family:Quicksand;text-decoration:none;background-color:transparent;border-width:0px;border-color:rgb(34,34,34);border-style:none}.tp-caption.zarja-body-text,.zarja-body-text{font-size:18px;line-height:24px;font-family:Muli;text-decoration:none;background-color:transparent;border-width:0px;border-color:rgb(34,34,34);border-style:none}</style>
-
-			<script type="text/javascript">
-
-				/******************************************
-					-	PREPARE PLACEHOLDER FOR SLIDER	-
-				******************************************/
-				
-
-				var setREVStartSize = function() {
-					var	tpopt = new Object();
-						tpopt.startwidth = 1080;
-						tpopt.startheight = 580;
-						tpopt.container = jQuery('#rev_slider_1_1');
-						tpopt.fullScreen = "off";
-						tpopt.forceFullWidth="off";
-
-					tpopt.container.closest(".rev_slider_wrapper").css({height:tpopt.container.height()});tpopt.width=parseInt(tpopt.container.width(),0);tpopt.height=parseInt(tpopt.container.height(),0);tpopt.bw=tpopt.width/tpopt.startwidth;tpopt.bh=tpopt.height/tpopt.startheight;if(tpopt.bh>tpopt.bw)tpopt.bh=tpopt.bw;if(tpopt.bh<tpopt.bw)tpopt.bw=tpopt.bh;if(tpopt.bw<tpopt.bh)tpopt.bh=tpopt.bw;if(tpopt.bh>1){tpopt.bw=1;tpopt.bh=1}if(tpopt.bw>1){tpopt.bw=1;tpopt.bh=1}tpopt.height=Math.round(tpopt.startheight*(tpopt.width/tpopt.startwidth));if(tpopt.height>tpopt.startheight&&tpopt.autoHeight!="on")tpopt.height=tpopt.startheight;if(tpopt.fullScreen=="on"){tpopt.height=tpopt.bw*tpopt.startheight;var cow=tpopt.container.parent().width();var coh=jQuery(window).height();if(tpopt.fullScreenOffsetContainer!=undefined){try{var offcontainers=tpopt.fullScreenOffsetContainer.split(",");jQuery.each(offcontainers,function(e,t){coh=coh-jQuery(t).outerHeight(true);if(coh<tpopt.minFullScreenHeight)coh=tpopt.minFullScreenHeight})}catch(e){}}tpopt.container.parent().height(coh);tpopt.container.height(coh);tpopt.container.closest(".rev_slider_wrapper").height(coh);tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(coh);tpopt.container.css({height:"100%"});tpopt.height=coh;}else{tpopt.container.height(tpopt.height);tpopt.container.closest(".rev_slider_wrapper").height(tpopt.height);tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(tpopt.height);}
-				};
-
-				/* CALL PLACEHOLDER */
-				setREVStartSize();
-
-
-				var tpj=jQuery;
-				tpj.noConflict();
-				var revapi1;
-
-				tpj(document).ready(function() {
-
-				if(tpj('#rev_slider_1_1').revolution == undefined){
-					revslider_showDoubleJqueryError('#rev_slider_1_1');
-				}else{
-				   revapi1 = tpj('#rev_slider_1_1').show().revolution(
-					{	
-												dottedOverlay:"none",
-						delay:15000,
-						startwidth:1080,
-						startheight:580,
-						hideThumbs:200,
-
-						thumbWidth:100,
-						thumbHeight:50,
-						thumbAmount:2,
-						
-												
-						simplifyAll:"off",
-
-						navigationType:"none",
-						navigationArrows:"none",
-						navigationStyle:"preview1",
-
-						touchenabled:"on",
-						onHoverStop:"on",
-						nextSlideOnWindowFocus:"off",
-
-						swipe_threshold: 75,
-						swipe_min_touches: 1,
-						drag_block_vertical: false,
-						
-												
-												
-						keyboardNavigation:"off",
-
-						navigationHAlign:"center",
-						navigationVAlign:"bottom",
-						navigationHOffset:0,
-						navigationVOffset:20,
-
-						soloArrowLeftHalign:"left",
-						soloArrowLeftValign:"center",
-						soloArrowLeftHOffset:20,
-						soloArrowLeftVOffset:0,
-
-						soloArrowRightHalign:"right",
-						soloArrowRightValign:"center",
-						soloArrowRightHOffset:20,
-						soloArrowRightVOffset:0,
-
-						shadow:0,
-						fullWidth:"off",
-						fullScreen:"off",
-
-												spinner:"spinner3",
-												
-						stopLoop:"off",
-						stopAfterLoops:-1,
-						stopAtSlide:-1,
-
-						shuffle:"off",
-
-						
-						
-						
-						
-						hideTimerBar:"on",
-						hideThumbsOnMobile:"off",
-						hideNavDelayOnMobile:1500,
-						hideBulletsOnMobile:"off",
-						hideArrowsOnMobile:"off",
-						hideThumbsUnderResolution:0,
-
-												hideSliderAtLimit:0,
-						hideCaptionAtLimit:0,
-						hideAllCaptionAtLilmit:601,
-						startWithSlide:0					});
-
-
-
-									}
-				});	/*ready*/
-
-			</script>
-
-
-			<style type="text/css">
-	#rev_slider_1_1_wrapper .tp-loader.spinner3 div { background-color: #B565A7 !important; }
-</style>
-</div><!-- END REVOLUTION SLIDER -->							</div>																													<div class="block2">							<div class="block2_content">																																<div class="block2_img">									<img class="block2_img_big" src="http://zarja.premiumcoding.com/sidebar/wp-content/uploads/2015/03/zarja-avatar-2.jpg">									<div class="block2_text">										<p>Hello, my name is <b>Zarja</b>. I am a blogger living in New York. This is a blog, where I post my photos, fashion trends and tips about the fashion world. I started with Zarja to provide you with daily fresh  <b>new ideas</b> and news.
-</br>
-You can contact me at: <a href="mailto:info@zarja.com"><span>info@zarja.com</span></b></a></p>									</div>									<div class="social_icons">										<div><a target="_blank"  href="http://twitter.com/PremiumCoding" title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank"  href="https://www.facebook.com/PremiumCoding" title="Facebook"><i class="fa fa-facebook"></i></a><a target="_blank"  href="https://dribbble.com/gljivec" title="Dribbble"><i class="fa fa-dribbble"></i></a><a target="_blank"  href="http://www.pinterest.com/gljivec/" title="Pinterest"><i class="fa fa-pinterest"></i></a><a target="_blank"  href="http://instagram.com/dreamypixels" title="Instagram"><i class="fa fa-instagram"></i></a></div>									</div>																									</div>							</div>						</div>									</header>					<script type="text/javascript">jQuery(document).ready(function($){	jQuery('.bxslider').bxSlider({	  auto: true,	  speed: 1000,	  controls: false,	  pager :false,	  easing : 'easeInOutQuint',	});});	</script>	<!-- main content start --><div class="mainwrap blog home  pmc-grid">	<div class="main clearfix">		<div class="pad"></div>					<div class="content blog">																														
-			<div class="blogpostcategory ">				<div class="topBlog">	
-						<div class="blog-category"><em><a href="../../category/drinks-coffee/index.html" >Drinks &amp; Food</a></em> </div>
-						<h2 class="title"><a href="../../index.html?p=6494" rel="bookmark" title="Permanent Link to Fresh bowl of mixed fruit with cream">Fresh bowl of mixed fruit with cream</a></h2>
-						<div class="blog-date"><a class="post-meta-comments" href="../../index.html?p=6494#commentform">No Comments</a></div>
-					</div>						
-					<a class="overdefultlink" href="../../index.html?p=6494">					<div class="overdefult">					</div>					</a>
-					<div class="blogimage">							<div class="loading"></div>								<a href="../../index.html?p=6494" rel="bookmark" title="Permanent Link to Fresh bowl of mixed fruit with cream"><img width="1080" height="580" src="../../wp-content/uploads/2015/03/zarja-fullwidth-post-16-1080x580.jpg" class="attachment-blog wp-post-image" alt="zarja-fullwidth-post-16" /></a>					</div>					
-					<div class="bottomborder"></div>												<div class="entry">		<div class = "meta">			<div class="topLeftBlog">									<div class = "post-meta">																			</div>								</div>						<div class="blogContent">				<div class="blogcontent"><p>Lorem ipsum dolor sit amet, cons ecte tuer adipiscing elit, sed diam non ummy nibh euismod tinc idunt ut laoreet dolore magna ali quam erat volutpat. Ut veniam, quis nostrud [&hellip;]</p>
-</div>			</div>			<div class="pmc-read-more">				<a  href="../../index.html?p=6494">Continue reading</a>			</div>					<div class = "post-time">				<a class="post-meta-time" href="../../2011/03/26/index.html">March 26, 2011</a>			</div>			<div class = "post-author">					<a class="post-meta-author" href="../../author/admin-polka/index.html">Written by: Zarja</a>			</div>		</div>			</div>					<div class="blog_social"> <div class="addthis_toolbox"><div class="custom_images"><a class="addthis_button_facebook" addthis:url="http://zarja.premiumcoding.com/boxed/fresh-bowl-of-mixed-fruit-with-cream/" addthis:title="Fresh bowl of mixed fruit with cream" ><i class="fa fa-facebook"></i></a><a class="addthis_button_twitter" addthis:url="http://zarja.premiumcoding.com/boxed/fresh-bowl-of-mixed-fruit-with-cream/" addthis:title="Fresh bowl of mixed fruit with cream"><i class="fa fa-twitter"></i></a><a class="addthis_button_pinterest_share" addthis:url="http://zarja.premiumcoding.com/boxed/fresh-bowl-of-mixed-fruit-with-cream/" addthis:title="Fresh bowl of mixed fruit with cream"><i class="fa fa-pinterest"></i></a><a class="addthis_button_google" addthis:url="http://zarja.premiumcoding.com/boxed/fresh-bowl-of-mixed-fruit-with-cream/" g:plusone:count="false" addthis:title="Fresh bowl of mixed fruit with cream"><i class="fa fa-google-plus"></i></a><a class="addthis_button_stumbleupon" addthis:url="http://zarja.premiumcoding.com/boxed/fresh-bowl-of-mixed-fruit-with-cream/" addthis:title="Fresh bowl of mixed fruit with cream"><i class="fa fa-stumbleupon"></i></a></div><script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js"></script></div></div>			</div>
-																																							
-			<div class="blogpostcategory ">				<div class="topBlog">	
-						<div class="blog-category"><em><a href="../../category/bathroom/index.html" >Bathroom</a> <a href="../../category/editors-choice/index.html" >Editor's choice</a></em> </div>
-						<h2 class="title"><a href="../../index.html?p=6491" rel="bookmark" title="Permanent Link to Cherry blossoms in the early spring">Cherry blossoms in the early spring</a></h2>
-						<div class="blog-date"><a class="post-meta-comments" href="../../index.html?p=6491#commentform">No Comments</a></div>
-					</div>						
-					<a class="overdefultlink" href="../../index.html?p=6491">					<div class="overdefult">					</div>					</a>
-					<div class="blogimage">							<div class="loading"></div>								<a href="../../index.html?p=6491" rel="bookmark" title="Permanent Link to Cherry blossoms in the early spring"><img width="1080" height="580" src="../../wp-content/uploads/2015/03/zarja-fullwidth-post-15-1080x580.jpg" class="attachment-blog wp-post-image" alt="zarja-fullwidth-post-15" /></a>					</div>					
-					<div class="bottomborder"></div>												<div class="entry">		<div class = "meta">			<div class="topLeftBlog">									<div class = "post-meta">																			</div>								</div>						<div class="blogContent">				<div class="blogcontent"><p>Lorem ipsum dolor sit amet, cons ecte tuer adipiscing elit, sed diam non ummy nibh euismod tinc idunt ut laoreet dolore magna ali quam erat volutpat. Ut veniam, quis nostrud [&hellip;]</p>
-</div>			</div>			<div class="pmc-read-more">				<a  href="../../index.html?p=6491">Continue reading</a>			</div>					<div class = "post-time">				<a class="post-meta-time" href="../../2011/03/26/index.html">March 26, 2011</a>			</div>			<div class = "post-author">					<a class="post-meta-author" href="../../author/admin-polka/index.html">Written by: Zarja</a>			</div>		</div>			</div>					<div class="blog_social"> <div class="addthis_toolbox"><div class="custom_images"><a class="addthis_button_facebook" addthis:url="http://zarja.premiumcoding.com/boxed/cherry-blossoms-in-the-early-spring/" addthis:title="Cherry blossoms in the early spring" ><i class="fa fa-facebook"></i></a><a class="addthis_button_twitter" addthis:url="http://zarja.premiumcoding.com/boxed/cherry-blossoms-in-the-early-spring/" addthis:title="Cherry blossoms in the early spring"><i class="fa fa-twitter"></i></a><a class="addthis_button_pinterest_share" addthis:url="http://zarja.premiumcoding.com/boxed/cherry-blossoms-in-the-early-spring/" addthis:title="Cherry blossoms in the early spring"><i class="fa fa-pinterest"></i></a><a class="addthis_button_google" addthis:url="http://zarja.premiumcoding.com/boxed/cherry-blossoms-in-the-early-spring/" g:plusone:count="false" addthis:title="Cherry blossoms in the early spring"><i class="fa fa-google-plus"></i></a><a class="addthis_button_stumbleupon" addthis:url="http://zarja.premiumcoding.com/boxed/cherry-blossoms-in-the-early-spring/" addthis:title="Cherry blossoms in the early spring"><i class="fa fa-stumbleupon"></i></a></div><script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js"></script></div></div>			</div>
-																																							
-			<div class="blogpostcategory last">				<div class="topBlog">	
-						<div class="blog-category"><em><a href="../../category/photography/index.html" >Lifestyle</a></em> </div>
-						<h2 class="title"><a href="../../index.html?p=6498" rel="bookmark" title="Permanent Link to Get comfortable in your silky bed">Get comfortable in your silky bed</a></h2>
-						<div class="blog-date"><a class="post-meta-comments" href="../../index.html?p=6498#commentform">No Comments</a></div>
-					</div>						
-					<a class="overdefultlink" href="../../index.html?p=6498">					<div class="overdefult">					</div>					</a>
-					<div class="blogimage">							<div class="loading"></div>								<a href="../../index.html?p=6498" rel="bookmark" title="Permanent Link to Get comfortable in your silky bed"><img width="1080" height="580" src="../../wp-content/uploads/2015/03/zarja-fullwidth-post-18-1080x580.jpg" class="attachment-blog wp-post-image" alt="zarja-fullwidth-post-18" /></a>					</div>					
-					<div class="bottomborder"></div>												<div class="entry">		<div class = "meta">			<div class="topLeftBlog">									<div class = "post-meta">																			</div>								</div>						<div class="blogContent">				<div class="blogcontent"><p>Lorem ipsum dolor sit amet, cons ecte tuer adipiscing elit, sed diam non ummy nibh euismod tinc idunt ut laoreet dolore magna ali quam erat volutpat. Ut veniam, quis nostrud [&hellip;]</p>
-</div>			</div>			<div class="pmc-read-more">				<a  href="../../index.html?p=6498">Continue reading</a>			</div>					<div class = "post-time">				<a class="post-meta-time" href="../../2011/03/22/index.html">March 22, 2011</a>			</div>			<div class = "post-author">					<a class="post-meta-author" href="../../author/admin-polka/index.html">Written by: Zarja</a>			</div>		</div>			</div>					<div class="blog_social"> <div class="addthis_toolbox"><div class="custom_images"><a class="addthis_button_facebook" addthis:url="http://zarja.premiumcoding.com/boxed/get-comfortable-in-your-silky-bed/" addthis:title="Get comfortable in your silky bed" ><i class="fa fa-facebook"></i></a><a class="addthis_button_twitter" addthis:url="http://zarja.premiumcoding.com/boxed/get-comfortable-in-your-silky-bed/" addthis:title="Get comfortable in your silky bed"><i class="fa fa-twitter"></i></a><a class="addthis_button_pinterest_share" addthis:url="http://zarja.premiumcoding.com/boxed/get-comfortable-in-your-silky-bed/" addthis:title="Get comfortable in your silky bed"><i class="fa fa-pinterest"></i></a><a class="addthis_button_google" addthis:url="http://zarja.premiumcoding.com/boxed/get-comfortable-in-your-silky-bed/" g:plusone:count="false" addthis:title="Get comfortable in your silky bed"><i class="fa fa-google-plus"></i></a><a class="addthis_button_stumbleupon" addthis:url="http://zarja.premiumcoding.com/boxed/get-comfortable-in-your-silky-bed/" addthis:title="Get comfortable in your silky bed"><i class="fa fa-stumbleupon"></i></a></div><script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js"></script></div></div>			</div>
-																					
-				
-								<div class="pmc-navigation">
-					<div class="alignleft"><a href="../../../boxed" >&laquo; Newer Posts</a></div>
-					<div class="alignright"></div>
-				</div>																</div>	</div>	</div>											<div class="totop"><div class="gototop"><div class="arrowgototop"></div></div></div><!-- footer--><!-- scroll sidebar -->		<div class="pmc-sidebar-post">			<div class="sidebar-post">					<div class="widget widget_categories"><h3>Categories</h3><div class="widget-line"></div>		<ul>
-	<li class="cat-item cat-item-7"><a href="../../category/bathroom/index.html" >Bathroom</a>
-</li>
-	<li class="cat-item cat-item-2"><a href="../../category/drinks-coffee/index.html" >Drinks &amp; Food</a>
-</li>
-	<li class="cat-item cat-item-3"><a href="../../category/editors-choice/index.html" >Editor&#039;s choice</a>
-</li>
-	<li class="cat-item cat-item-4"><a href="../../category/blog/index.html" >Fashion</a>
-</li>
-	<li class="cat-item cat-item-5"><a href="../../category/featured/index.html" >Featured</a>
-</li>
-	<li class="cat-item cat-item-6"><a href="../../category/photography/index.html" >Lifestyle</a>
-</li>
-		</ul>
-</div><div class="widget category_posts"><h3>Popular Post</h3><div class="widget-line"></div>																				<div class="widgett">		    			<div class="imgholder">					<a href="../../index.html?p=1484" rel="bookmark" title="Permanent Link to Prepare for the Holiday Festivities">						<img src = "../../wp-content/uploads/2014/03/zarja-fullwidth-post-7-110x80.jpg" alt = "Prepare for the Holiday Festivities"  > 						</a>				</div>				<div class="wttitle"><h4><a href="../../index.html?p=1484" rel="bookmark" title="Permanent Link to Prepare for the Holiday Festivities">Prepare for the Holiday Festivities</a></h4></div>				<div class="widget-date">March 23, 2014</div>		</div>														</div>			</div>			<div class="pmc-sidebar-post-tags">				<h3>Tags</h3>				<span><a href="../../tag/berry/index.html" rel="tag">berry</a><a href="../../tag/cream/index.html" rel="tag">cream</a><a href="../../tag/food/index.html" rel="tag">food</a></span> 			</div>		</div><footer>		<div id="footer">			<div id="footerinside">	<!--footer widgets-->		<div class="block_footer_text">			<p>			</p>		</div>		<div class="footer_widget">			<div class="footer_widget1">				<div class="widget widget_text"><h3>About me</h3>			<div class="textwidget"><img src = "../../wp-content/uploads/2015/03/zarja-footer-avatar1.jpg"></img>
-</br>
-Hello, my name is <b>Zara.</b> I am a student living in Berlin. This is my fancy blog. </div>
-		</div><div class="widget socials">		<div class="widgett">					<div class="social_icons">				<div><a target="_blank"  href="http://twitter.com/PremiumCoding" title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank"  href="https://www.facebook.com/PremiumCoding" title="Facebook"><i class="fa fa-facebook"></i></a><a target="_blank"  href="https://dribbble.com/gljivec" title="Dribbble"><i class="fa fa-dribbble"></i></a><a target="_blank"  href="http://www.pinterest.com/gljivec/" title="Pinterest"><i class="fa fa-pinterest"></i></a><a target="_blank"  href="http://instagram.com/dreamypixels" title="Instagram"><i class="fa fa-instagram"></i></a></div>			</div>		</div>			</div>						</div>				<div class="footer_widget2">					<div class="widget APTFIN_by_TAP"><h3>Our Instagram Feed</h3><!-- Using AlpinePT for Instagram v1.2.7 with JSON--><!-- Request made --><!-- Success using wp_remote_get() and JSON --><!-- Retrieved from transient --><div id="aptfinbytap_domain-2-AlpinePhotoTiles_container" class="AlpinePhotoTiles_container_class"><div id="aptfinbytap_domain-2-cascade-parent" class="AlpinePhotoTiles_parent_class" style="width:100%;max-width:100%;padding:0px;margin:0px auto;text-align:center;"><div class="AlpinePhotoTiles_cascade_column" style="width:33.3333333333%;float:left;margin:0;"><div class="AlpinePhotoTiles_cascade_column_inner" style="display:block;margin:0 3px;overflow:hidden;"><a href="https://www.instagram.com/p/0Qf8hpuS2o/" class="AlpinePhotoTiles-link" target="_blank" title="  " alt="  "><img id="aptfinbytap_domain-2-tile-0" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-noborder AlpinePhotoTiles-img-nocorners AlpinePhotoTiles-img-nohighlight" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/11007875_1417732838528422_940566078_n.jpg?ig_cache_key=OTQxMzkyODIwODY0MzYzOTQ0.2" title="  " alt="  " border="0" hspace="0" vspace="0" style="margin:1px 0 5px 0;padding:0;max-width:100%;"  /></a><a href="https://www.instagram.com/p/yDRJsouS6i/" class="AlpinePhotoTiles-link" target="_blank" title="  " alt="  "><img id="aptfinbytap_domain-2-tile-3" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-noborder AlpinePhotoTiles-img-nocorners AlpinePhotoTiles-img-nohighlight" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10914644_776768712376935_974866297_n.jpg?ig_cache_key=OTAxNjM5NzgzNTk4MDc1NTU0.2" title="  " alt="  " border="0" hspace="0" vspace="0" style="margin:1px 0 5px 0;padding:0;max-width:100%;"  /></a><a href="https://www.instagram.com/p/yDRCO2uS6T/" class="AlpinePhotoTiles-link" target="_blank" title="  " alt="  "><img id="aptfinbytap_domain-2-tile-6" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-noborder AlpinePhotoTiles-img-nocorners AlpinePhotoTiles-img-nohighlight" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10903647_1616371101924628_1106026409_n.jpg?ig_cache_key=OTAxNjM5MjcwNTg0MzY0Njkx.2" title="  " alt="  " border="0" hspace="0" vspace="0" style="margin:1px 0 5px 0;padding:0;max-width:100%;"  /></a></div></div><div class="AlpinePhotoTiles_cascade_column" style="width:33.3333333333%;float:left;margin:0;"><div class="AlpinePhotoTiles_cascade_column_inner" style="display:block;margin:0 3px;overflow:hidden;"><a href="https://www.instagram.com/p/0Qf6M5OS2h/" class="AlpinePhotoTiles-link" target="_blank" title="  " alt="  "><img id="aptfinbytap_domain-2-tile-1" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-noborder AlpinePhotoTiles-img-nocorners AlpinePhotoTiles-img-nohighlight" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10956673_571675806306804_1526992606_n.jpg?ig_cache_key=OTQxMzkyNjYxMTM2ODc5MDA5.2" title="  " alt="  " border="0" hspace="0" vspace="0" style="margin:1px 0 5px 0;padding:0;max-width:100%;"  /></a><a href="https://www.instagram.com/p/yDRHw5uS6f/" class="AlpinePhotoTiles-link" target="_blank" title="  " alt="  "><img id="aptfinbytap_domain-2-tile-4" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-noborder AlpinePhotoTiles-img-nocorners AlpinePhotoTiles-img-nohighlight" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10467842_887272081303391_1544775460_n.jpg?ig_cache_key=OTAxNjM5NjUwNzM5MzAyMDQ3.2" title="  " alt="  " border="0" hspace="0" vspace="0" style="margin:1px 0 5px 0;padding:0;max-width:100%;"  /></a><a href="https://www.instagram.com/p/yDQ_bROS6L/" class="AlpinePhotoTiles-link" target="_blank" title="  " alt="  "><img id="aptfinbytap_domain-2-tile-7" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-noborder AlpinePhotoTiles-img-nocorners AlpinePhotoTiles-img-nohighlight" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10895270_1621116078116543_663162034_n.jpg?ig_cache_key=OTAxNjM5MDc3NzU1NDMyNTg3.2" title="  " alt="  " border="0" hspace="0" vspace="0" style="margin:1px 0 5px 0;padding:0;max-width:100%;"  /></a></div></div><div class="AlpinePhotoTiles_cascade_column" style="width:33.3333333333%;float:left;margin:0;"><div class="AlpinePhotoTiles_cascade_column_inner" style="display:block;margin:0 3px;overflow:hidden;"><a href="https://www.instagram.com/p/0Qf4PPuS2c/" class="AlpinePhotoTiles-link" target="_blank" title="  " alt="  "><img id="aptfinbytap_domain-2-tile-2" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-noborder AlpinePhotoTiles-img-nocorners AlpinePhotoTiles-img-nohighlight" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/1208331_753041764811364_494417151_n.jpg?ig_cache_key=OTQxMzkyNTI2MjIyODk2NTQw.2" title="  " alt="  " border="0" hspace="0" vspace="0" style="margin:1px 0 5px 0;padding:0;max-width:100%;"  /></a><a href="https://www.instagram.com/p/yDRFyWOS6c/" class="AlpinePhotoTiles-link" target="_blank" title="  " alt="  "><img id="aptfinbytap_domain-2-tile-5" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-noborder AlpinePhotoTiles-img-nocorners AlpinePhotoTiles-img-nohighlight" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10903434_645985248861492_1029691888_n.jpg?ig_cache_key=OTAxNjM5NTE0ODUyMjQxMDUy.2" title="  " alt="  " border="0" hspace="0" vspace="0" style="margin:1px 0 5px 0;padding:0;max-width:100%;"  /></a><a href="https://www.instagram.com/p/yDQ9WUuS6E/" class="AlpinePhotoTiles-link" target="_blank" title="  " alt="  "><img id="aptfinbytap_domain-2-tile-8" class="AlpinePhotoTiles-image AlpinePhotoTiles-img-noshadow AlpinePhotoTiles-img-noborder AlpinePhotoTiles-img-nocorners AlpinePhotoTiles-img-nohighlight" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10903600_766214673470086_1940318400_n.jpg?ig_cache_key=OTAxNjM4OTM1MDA2NDkwMjQ0.2" title="  " alt="  " border="0" hspace="0" vspace="0" style="margin:1px 0 5px 0;padding:0;max-width:100%;"  /></a></div></div><div class="AlpinePhotoTiles_breakline"></div></div><div class="AlpinePhotoTiles_breakline"></div></div><div class="AlpinePhotoTiles_breakline"></div></div>			</div>				<div class="footer_widget3">					<div class="widget widget_facebook_widget"><h3>Like Us On Facebook</h3><center><div class="loader"><img src="../../wp-content/plugins/facebook-pagelike-widget/loader.gif" /></div></center><div id="fb-root"></div>
-        <div class="fb-like-box" data-href="https://www.facebook.com/PremiumCoding" data-width="350" data-height="350" data-colorscheme="light" data-show-faces="1" data-header="0" data-stream="0" data-show-border="No" style=".phm {display:none;}"></div></div>			</div>		</div>	</div>			</div>	<!-- footer bar at the bootom-->	<div id="footerbwrap">		<div id="footerb">			<div class="lowerfooter">			<div class="copyright">					<div class="left-footer-content">© 2015 copyright PREMIUMCODING // All rights reserved</div>
-
-<div class="right-footer-content">Zarya was made with love by Premiumcoding</div>
-			</div>			</div>		</div>	</div>	</footer>	<span id="bruteprotect_uptime_check_string" style="display:none;">7ads6x98y</span><script>	
-	jQuery(document).ready(function(){	
-		jQuery('.searchform #s').attr('value','Search our News...');
-		
-		jQuery('.searchform #s').focus(function() {
-			jQuery('.searchform #s').val('');
-		});
-		
-		jQuery('.searchform #s').focusout(function() {
-			if(jQuery('.searchform #s').attr('value') == '')
-				jQuery('.searchform #s').attr('value','Search our News...');
-		});	
-		jQuery("a[rel^='lightbox']").prettyPhoto({theme:'light_rounded',show_title: true, deeplinking:false,callback:function(){scroll_menu()}});		
-	});	</script>
-
-<link rel='stylesheet' id='AlpinePhotoTiles_style-css'  href='../../wp-content/plugins/alpine-photo-tile-for-instagram/css/AlpinePhotoTiles_style.css?ver=1.2.7' type='text/css' media='all' />
-<script type='text/javascript' src='../../wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var _wpcf7 = {"loaderUrl":"http:\/\/zarja.premiumcoding.com\/boxed\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
-/* ]]> */
-</script>
-<script type='text/javascript' src='../../wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.1'></script>
-<script type='text/javascript' src='../../wp-content/themes/zarja/js/jquery.fitvids.js?ver=1'></script>
-<script type='text/javascript' src='../../wp-content/themes/zarja/js/retina.min.js?ver=1'></script>
-<script type='text/javascript' src='../../wp-content/themes/zarja/js/custom.js?ver=1'></script>
-<script type='text/javascript' src='../../wp-content/themes/zarja/js/jquery.prettyPhoto.js?ver=1'></script>
-<script type='text/javascript' src='../../wp-content/themes/zarja/js/jquery.easing.1.3.js?ver=1'></script>
-<script type='text/javascript' src='../../wp-content/themes/zarja/js/jquery.bxslider.js?ver=1'></script>
-<script type='text/javascript' src='../../wp-content/plugins/alpine-photo-tile-for-instagram/js/AlpinePhotoTiles_script.js?ver=1.2.7'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var vars = {"app_id":"503595753002055","select_lng":"en_US"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='../../wp-content/plugins/facebook-pagelike-widget/fb.js?ver=4.1.14'></script>
-</body></html>			
