@@ -17,7 +17,21 @@ troy is the basic setup of a blogging site. It has been structured using HTML/CS
 * Found Coverage               =  Percentage of Found / Structures on the ground
 * Sprayed Coverage             =  Percentage of Visited Sprayed / Found
 
-| Name | Description          |
+|**Variable** | Description          |
 | ------------- | ----------- |
 | Help      | Display the help window.|
 | Close     | Closes a window     |
+| Close     | Closes a window     |
+| Close     | Closes a window     |
+| Close     | Closes a window     |
+| Close     | Closes a window     |
+| Close     | Closes a window     |
+| Close     | Closes a window     |
+
+
+
+
+| Name | Description          |
+| ------------- | ----------- |
+| Help      | ~~Display the~~ help window.|
+| Close     | _Closes_ a window     |
