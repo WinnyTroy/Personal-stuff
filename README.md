@@ -9,8 +9,9 @@ ________________________________|_______________________________________________
 * Enumerated Structures        =|  The number of structures as they are in the spray area shape file
 ________________________________|____________________________________________________________________________
 * Not sprayable structures     =|  The number of structures in the field that were found not to be sprayable
+________________________________|____________________________________________________________________________________
 * Duplicate sprayed structures =|  When a structure has been reported more than one time with the spray status sprayed (if ID                                   |  XYZ appears twice as sprayed, the count of duplicates will be 1, if it appears 3 times the                                   |  count will be 2, ... etc.)
-                                |
+________________________________|______________________________________________________________________________________________
 * Structures on the ground     =|  Enumerated structures subtract number of not sprayable structures + number of new                                           |    structureres + number of duplicate structures that have been sprayed
                                 |
 * Found                        =|  Number of all unique records that are sprayable add Number of structures that were sprayed                                   |  that are not part of the unique record set (i.e the number of duplicates)
