@@ -2,5 +2,4 @@
 
   
 troy is the basic setup of a blogging site. It has been structured using HTML/CSS.  It also uses Bootsrap for front-end styling.
-
-..figure::https://drive.google.com/open?id=1wMO2O-afrEOg-HoSVe_dFZ-SgJrSJeoi
+![data_flow](https://user-images.githubusercontent.com/11174326/49939360-b3ad8d80-feed-11e8-9eba-99b1d44e7a4b.png)
