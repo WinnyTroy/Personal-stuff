@@ -16,3 +16,8 @@ troy is the basic setup of a blogging site. It has been structured using HTML/CS
 * Spray Effectiveness          =  Percentage of  Visited Sprayed / Structures on the ground
 * Found Coverage               =  Percentage of Found / Structures on the ground
 * Sprayed Coverage             =  Percentage of Visited Sprayed / Found
+
+| Name | Description          |
+| ------------- | ----------- |
+| Help      | Display the help window.|
+| Close     | Closes a window     |
