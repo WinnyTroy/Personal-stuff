@@ -9,10 +9,10 @@ troy is the basic setup of a blogging site. It has been structured using HTML/CS
 | ------------- | ----------- |
 | Enumerated Structures             | The number of structures as they are in the spray area shape file.|
 | Not sprayable structures          | The number of structures in the field that were found not to be sprayable.     |
-| Duplicate sprayed structures      | When a structure has been reported more than one time with the spray status sprayed (if                                      IDXYZ appears twice as sprayed, the count of duplicates will be 1, if it appears 3 times                                      the count will be 2, ... etc.)     |
-| Structures on the ground     | Enumerated structures subtract number of not sprayable structures + number of new                                               structureres + number of duplicate structures that have been sprayed     |
-| Found     | Number of all unique records that are sprayable add Number of structures that were sprayed                                     that are not part of the unique record set (i.e the number of duplicates)     |
-| Visited Sprayed     | Number of all unique records that have the spray status "sprayed"     |
-| Spray Effectiveness     | Percentage of  Visited Sprayed / Structures on the ground     |
-| Found Coverage     | Percentage of Found / Structures on the ground     |
-| Sprayed Coverage     | Percentage of Visited Sprayed / Found     |
+| Duplicate sprayed structures      | When a structure has been reported more than one time with the spray status sprayed (if                                         ID XYZ appears twice as sprayed, the count of duplicates will be 1, if it appears 3 times                                       the count will be 2, ... etc.)     |
+| Structures on the ground     | Enumerated structures subtract the number of not sprayable structures + number of new                                          structures + number of duplicate structures that have been sprayed.     |
+| Found     | Number of all unique records that are sprayable add Number of structures that were sprayed that are not part of                 the unique record set (i.e the number of duplicates.)     |
+| Visited Sprayed     | Number of all unique records that have the spray status "sprayed".     |
+| Spray Effectiveness     | The percentage of  Visited Sprayed / Structures on the ground.     |
+| Found Coverage     | The percentage of Found / Structures on the ground.     |
+| Sprayed Coverage     | The percentage of Visited Sprayed / Found.     |
