@@ -15,4 +15,4 @@ troy is the basic setup of a blogging site. It has been structured using HTML/CS
 | Visited Sprayed     | Number of all unique records that have the spray status "sprayed"     |
 | Spray Effectiveness     | Percentage of  Visited Sprayed / Structures on the ground     |
 | Found Coverage     | Percentage of Found / Structures on the ground     |
-| Close     | Percentage of Visited Sprayed / Found     |
+| Sprayed Coverage     | Percentage of Visited Sprayed / Found     |
