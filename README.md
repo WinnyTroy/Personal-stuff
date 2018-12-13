@@ -19,9 +19,9 @@ troy is the basic setup of a blogging site. It has been structured using HTML/CS
 
 |**Variable** | **Aggregations**         |
 | ------------- | ----------- |
-| Enumerated Structures      | The number of structures as they are in the spray area shape file.|
-| Not sprayable structures      | The number of structures in the field that were found not to be sprayable.     |
-| Duplicate sprayed structures     | When a structure has been reported more than one time with the spray status sprayed (if                                      IDXYZ appears twice as sprayed, the count of duplicates will be 1, if it appears 3 times                                      the count will be 2, ... etc.)     |
+| Enumerated Structures             | The number of structures as they are in the spray area shape file.|
+| Not sprayable structures          | The number of structures in the field that were found not to be sprayable.     |
+| Duplicate sprayed structures      | When a structure has been reported more than one time with the spray status sprayed (if                                      IDXYZ appears twice as sprayed, the count of duplicates will be 1, if it appears 3 times                                      the count will be 2, ... etc.)     |
 | Close     | Closes a window     |
 | Close     | Closes a window     |
 | Close     | Closes a window     |
