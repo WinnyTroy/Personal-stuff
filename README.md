@@ -34,3 +34,17 @@ As well, you could run flake8 to reveal the problems within the entire project b
 flake8 path/to/your_project
 
 ```
+
+I was mind blown when I learned that you could also exclude other files that you did not necessarily need to be tested against. This could be as a result of the syntax used within these files. Files such as configuration files and migration files do not necessarily need to conform to the Flake8 standards, thus the reason to exclude them from the rest of the files that you would run Flake8 against. The flake8 documentation too could guide you configure this linting tool to do just what you need it to do. Really cool right?
+
+Back to the matter at hand, I feel I need to mention that although you can install it, and use Flake8 locally on your machine, organizations that are somewhat organized, also integrate it into their continuous integration(CI). This is done to ensure code quality, as it would prevent pushing code with syntax errors and obvious semantic errors to the remote repository hosting the project. Semantic errors though should ideally be caught by the tests you write.
+
+**SETTING UP FLAKE8**
+
+How, I got to setup flake8, was quite different. I ran the following command first, which simply created a file in that directory for me to write into. You could modify it to cater to whichever editor you have, I personally got used to sublime and kinda stuck to it.
+
+ 
+```
+subl .git/hooks/pre-commit
+
+```
