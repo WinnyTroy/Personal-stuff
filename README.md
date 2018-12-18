@@ -78,7 +78,7 @@ Now, your machine is configured with a pre-commit hook that runs flake8 against 
 <img width="754" alt="screen shot 2018-12-18 at 10 52 45" src="https://user-images.githubusercontent.com/11174326/50140281-4450e880-02b5-11e9-8c97-2a6d6e8890a0.png">
 
 
-But I also learned a simpler way. Running through [Flake8's documentation]()http://flake8.pycqa.org/en/latest/user/using-hooks.html, it instructs that you can install a built-in hook using the following command:
+But I also learned a simpler way. Running through [Flake8's documentation](http://flake8.pycqa.org/en/latest/user/using-hooks.html), it instructs that you can install a built-in hook using the following command:
 
 ```
 flake8 --install-hook git
