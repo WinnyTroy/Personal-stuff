@@ -48,3 +48,42 @@ How, I got to setup flake8, was quite different. I ran the following command fir
 subl .git/hooks/pre-commit
 
 ```
+
+This pre-commit file that you just created needs to be written into. Right? So this is what needs to go into the file:
+
+```
+git diff --staged --name-only | grep -E '.py$'| xargs flake8 --exclude=migrations -
+
+```
+Save the file, then close the session. 
+
+The following command has 3 sections that do 3 ultimately different things. You can obviously tell that it is involved somehow with git since it has the git command at the prefix section. 
+
+The first part that includes the 'git diff --staged --name-only' basically checks all the files in staging ready to be committed. 
+
+The second section 'grep -E '.py$'’ runs through all the files that have been staged and basically picks out all the files that have a '.py' extension. 
+
+The final bit 'xargs flake8 --exclude=migrations' is to instruct flake8 to exclude testing migration files when checking python files. This could also be modified to exclude other files, as mentioned earlier.
+
+This file we just created is redundant. Basically, we just made a file, what next? so, we now make this file executable. So, every time you stage files with git, it runs flake8 against the files that you are invoking it against. We do this by running the following command:
+
+```
+chmod +x .git/hooks/pre-commit
+
+```
+chmod is a very useful tool for managing rights (which can be read, write, or execute) the user and group that own a file, and other system users have on the file. 'x' stands for execution rights, allowing the file, in this case to be an executable file. The ‘+’ symbol basically grants all users (including those that are not part of the group that owns the file) the right to execute the file. The last segment is a file path to the pre-commit file we initially began making.
+
+Now, your machine is configured with a pre-commit hook that runs flake8 against all the files you stage(Basically `git add`, and try commiting them, the hook fires the following message and aborts committing).
+
+<img width="754" alt="screen shot 2018-12-18 at 10 52 45" src="https://user-images.githubusercontent.com/11174326/50140281-4450e880-02b5-11e9-8c97-2a6d6e8890a0.png">
+
+
+But I also learned a simpler way. Running through Flake8's documentation, it instructs that you can install a built-in hook using the following command:
+
+```
+flake8 --install-hook git
+
+```
+This will install the pre-commit hook into the folder '.git/hooks/'. Just like before, to invoke flake8, you would need to be committing a file to git.
+
+These were my discoveries for this time. I'm sure to keep you posted on more along the road to building my coding fortress
