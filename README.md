@@ -65,7 +65,7 @@ The second section 'grep -E '.py$'’ runs through all the files that have been 
 
 The final bit 'xargs flake8 --exclude=migrations' is to instruct flake8 to exclude testing migration files when checking python files. This could also be modified to exclude other files, as mentioned earlier.
 
-This file we just created is redundant. Basically, we just made a file, what next? so, we now make this file executable. So, every time you stage files with git, it runs flake8 against the files that you are invoking it against. We do this by running the following command:
+This file we just created is redundant. Basically, we just made a file, but what next? The next step should be to make this file executable. So, every time you stage files with git, it runs flake8 against the files that you are invoking it against. We do this by running the following command:
 
 ```
 chmod +x .git/hooks/pre-commit
@@ -78,7 +78,7 @@ Now, your machine is configured with a pre-commit hook that runs flake8 against 
 <img width="754" alt="screen shot 2018-12-18 at 10 52 45" src="https://user-images.githubusercontent.com/11174326/50140281-4450e880-02b5-11e9-8c97-2a6d6e8890a0.png">
 
 
-But I also learned a simpler way. Running through Flake8's documentation, it instructs that you can install a built-in hook using the following command:
+But I also learned a simpler way. Running through [Flake8's documentation]()http://flake8.pycqa.org/en/latest/user/using-hooks.html, it instructs that you can install a built-in hook using the following command:
 
 ```
 flake8 --install-hook git
