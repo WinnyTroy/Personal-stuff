@@ -4,7 +4,7 @@
 troy is the basic setup of a blogging site. It has been structured using HTML/CSS.  It also uses Bootsrap for front-end styling.
 
 
-                                      **RIVETING INTRODUCTION TO FLAKE8**
+**RIVETING INTRODUCTION TO FLAKE8**
 
   
 
@@ -12,4 +12,9 @@ Recently, I was learning about tools that make me a better python developer. Hav
 
   
 
-So, in my discovery, I stumbled upon Flake8. This is a good python code linter that you can use. It encompasses other coding standards like Pep8 and Pylint. To install it, just run the command
+So, in my discovery, I stumbled upon Flake8. This is a good python code linter that you can use. It encompasses other coding standards like Pep8 and Pylint. To install it, just run the command:
+
+```
+python -m pip install flake8
+
+```
