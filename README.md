@@ -18,3 +18,19 @@ So, in my discovery, I stumbled upon Flake8. This is a good python code linter t
 python -m pip install flake8
 
 ```
+
+**COOL FEATURES FROM FLAKE8**
+
+You could choose to either check a single file by narrowing down to that specific file. This could be done by running:
+
+```
+flake8 path/to/your/code/example_main.py
+
+```
+
+As well, you could run flake8 to reveal the problems within the entire project by narrowing down to the project folder. 
+
+```
+flake8 path/to/your_project
+
+```
