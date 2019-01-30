@@ -20,15 +20,13 @@ The flow has been split into 3 main segments that fulfill different objectives.
     2. This second segment is the counts process group that obtains an aggregated value for private and public projects distinctly. Within the same process group we are able to obtain a count for all the projects created within the current month. This count data is then fed into the third segment
     3. The final segment stores the data within the counts model.
 
-**Nifi counts Data Flow**
+*Nifi counts Data Flow*
     - A `GET` request is made to the `users` endpoint. The response is a big payload of all the users currently registered on the ona platform.
     - This response is then broken down into smaller payloads for each individual user, and evaluated to obtain the username for the user in question.
     - With this username, another `GET` call is made to the `projects` endpoint i.e. 
-
-    ``` https://api.ona.io/api/v1/projects?owner=${username}```
-
-    This is done in order to recieve all the projects owned by that particular user.
     
+``` https://api.ona.io/api/v1/projects?owner=${username} ```
+    This is done in order to recieve all the projects owned by that particular user.
     - The response is then evaluated to once more. Within the payload, we check to evaluate if the `public` attribute is set to true or false. This is then what splits the flow into two separate flows according the value obtained from the public attribute. The flow is then routed to either public or projects.
     - The UpdateCounter processor from Nifi is used to obtain the count value of both the public and private projects. The resultant value is stored within Nifi's Counter section at the menu at the very top right.
     - After count information for the projects has been reveived, then the flowfiles are then merged back into one flowfile and another `GET` call is made to Nifi's counters API to obtain all the count values.
@@ -37,6 +35,11 @@ The flow has been split into 3 main segments that fulfill different objectives.
     - The response is then transformed using the Jolt Transform processor to return only the valueCount received from the `All UpdateCounter's` variable gotten after hitting the Nifi counts API. All others are removed from the output reveived from this processor.
                             [image of the response received from the jolt transform processor]
     - The count data is then evaluated from the response and inserted into the Counts table
+
+Getting Project count for the current month
+    - This is obtained using Nifi's Expression Language.
+    - The date created attribute is evaluated from the response received after we hit the projects endpoint.
+    - This attributed is then equated to the current month and year. These two variables are as well obtained using Nifi's expression language. If the variables are a match then the project is counted, else it is not included in the count.
 
 Getting Project count for the current month
     - This is obtained using Nifi's Expression Language.
