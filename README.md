@@ -9,11 +9,12 @@ troy is the basic setup of a blogging site. It has been structured using HTML/CS
 The Support Portal is purposed to equip the support and sales team with the necessary account details they require to provide services to the clients. It receives its information from the `ona core` API and prepares the same data to a format more precise to the needs of the support and sales team. The processes for the system are to be designed and developed to comply with company policies to ensure data privacy. 
 
 **SYSTEM ARCHITECTURE**
-
+------------------------------------------------------------------------
 <img width="821" alt="screen shot 2019-01-30 at 12 05 43" src="https://user-images.githubusercontent.com/11174326/51970301-a2154a80-2487-11e9-9a41-2ac512e406b5.png">
 
 
 **Nifi counts flow**
+------------------------------------------------------------------------
 
 The flow has been split into 3 main segments that fulfill different objectives.
     1. This first segment hits the users endpoint, with the need to obtain an array of all the users currently on the Ona platform.
@@ -22,7 +23,9 @@ The flow has been split into 3 main segments that fulfill different objectives.
     3. The final segment stores the data within the counts model.
 
 **Nifi counts Data Flow**
-    - A `GET` request is made to the `users` endpoint. The response is a big payload of all the users currently registered on the ona platform.
+------------------------------------------------------------------------
+
+ - A `GET` request is made to the `users` endpoint. The response is a big payload of all the users currently registered on the ona platform.
     - This response is then broken down into smaller payloads for each individual user, and evaluated to obtain the username for the user in question.
     - With this username, another `GET` call is made to the `projects` endpoint i.e.``` https://api.ona.io/api/v1/projects?owner=${username} ```
     This is done in order to recieve all the projects owned by that particular user.
@@ -34,16 +37,13 @@ The flow has been split into 3 main segments that fulfill different objectives.
     - The count data is then evaluated from the response and inserted into the Counts table
 
 **Getting Project count for the current month**
-    - This is obtained using Nifi's Expression Language.
-    - The date created attribute is evaluated from the response received after we hit the projects endpoint.
-    - This attributed is then equated to the current month and year. These two variables are as well obtained using Nifi's expression language. If the variables are a match then the project is counted, else it is not included in the count.
-
-**Getting Project count for the current month**
-    - This is obtained using Nifi's Expression Language.
-    - The date created attribute is evaluated from the response received after we hit the projects endpoint.
-    - This attributed is then equated to the current month and year. These two variables are as well obtained using Nifi's expression language. If the variables are a match then the project is counted, else it is not included in the count.
+------------------------------------------------------------------------
+- This is obtained using Nifi's Expression Language.
+- The date created attribute is evaluated from the response received after we hit the projects endpoint.
+- This attributed is then equated to the current month and year. These two variables are as well obtained using Nifi's expression language. If the variables are a match then the project is counted, else it is not included in the count.
 
 **Notes**
+------------------------------------------------------------------------
 
 Nifi counters just values that you can increase or decrease given a particular delta. They are available to users from the menu located at the very top right: 
         [image of the menu]
@@ -53,10 +53,16 @@ They are quite useful if you need to monitor particular values all through your 
 you can notice that it’s possible to reset a counter to 0 from the counters table with the button in the last column (assuming you have write access to the counters based on the defined policies). This can be useful when doing some tests. At the moment however, Nifi does not provide a way to delete a counter, only reset. There was no delete option because if you deleted the counter, it would be recreated immediately if the processor was still running. Moreover, when Nifi is restarted, the counters are cleared completely.
 
 The counters also can be reset programmatically by hitting the following endpoint:
-            ```https://nifi.ona.io/nifi-api/counters/<counterID>```
+           
+           ```
+           https://nifi.ona.io/nifi-api/counters/<counterID>
+           ```
+           
 
 The count information can be obtained by hitting this endpoint: 
-            ```https://nifi.ona.io/nifi-api/counters```
+            ```
+            https://nifi.ona.io/nifi-api/counters
+            ```
 
 
 
