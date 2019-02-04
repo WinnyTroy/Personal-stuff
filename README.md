@@ -3,7 +3,7 @@
   
 troy is the basic setup of a blogging site. It has been structured using HTML/CSS.  It also uses Bootsrap for front-end styling.
 
-#Nifi Account Details Flow
+# Nifi Account Details Flow
 ------------------------------------------------------------------------
 This flow enables us fetch details for various accounts(Private and Organiational).
 It takes either the email or the account username as input. The verification on which of the attribute to use to begin the flow is done automatically in Nifi by running the input through a regular expression that checks if the input is an email or not.
@@ -17,7 +17,7 @@ If an email is provided, Nifi uses this to make a `GET` call to Ona's user's end
 
 
 
-#Nifi projects and Forms flow
+# Nifi projects and Forms flow
 ------------------------------------------------------------------------
 - This flow provides us with the necessary details pertaining individual projects and forms associated with the username.
 - It takes the username as input and uses this to make a `GET` call to the projects endpoint. This then returns the project details required.
@@ -37,7 +37,7 @@ If an email is provided, Nifi uses this to make a `GET` call to Ona's user's end
 - All details collected throughout the flow are then inserted into the database.
 
 
-#Nifi counts flow
+# Nifi counts flow
 ------------------------------------------------------------------------
 
 The flow has been split into 3 main segments that fulfill different objectives.
