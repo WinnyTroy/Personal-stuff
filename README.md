@@ -12,5 +12,5 @@ See the `specification documentation <https://docs.google.com/document/d/11CJmhm
 
 System Architecture
 -------------------
-.. image:: https://user-images.githubusercontent.com/11174326/51970301-a2154a80-2487-11e9-9a41-2ac512e406b5.png
-  :width: 820
+<img width="821" alt="sp" src="https://user-images.githubusercontent.com/11174326/53240276-5da85380-36af-11e9-8f82-183a9744d65d.png">
+
